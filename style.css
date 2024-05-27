@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    background-image: url(images.avif);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    height: 100vh;
+}
+#myH1{
+    font-size: 4em;
+    color: rgb(26, 8, 8);
+    font-family: monospace;
+    text-align: center;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+#display{
+    font-size: 4em;
+    color: rgb(26, 8, 8);
+    font-family: monospace;
+    margin-bottom: 40px;
+}
+
+#startBtn{
+    background: linear-gradient(to bottom, #4caf61, #0e7413); /* Green gradient */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none; /* Remove default button outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  #startBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  #startBtn:active {
+    transform: translateY(2px);
+  }
+  
+  #startBtn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.4s;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #startBtn:hover::before {
+    opacity: 1;
+  }
+  
+  #startBtnspan {
+    position: relative;
+    z-index: 1;
+  }
+  
+
+  #stopBtn {
+    background: linear-gradient(to bottom, #FF5733, #941f05); /* Red gradient */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none; /* Remove default button outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  #stopBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  #stopBtn:active {
+    transform: translateY(2px);
+  }
+  
+  #stopBtn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.4s;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #stopBtn:hover::before {
+    opacity: 1;
+  }
+  
+  #stopBtn span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #resetBtn {
+    background: linear-gradient(to bottom, #3498db, #044672); /* Blue gradient */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none; /* Remove default button outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  #resetBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  #resetBtn:active {
+    transform: translateY(2px);
+  }
+  
+  #resetBtn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.4s;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #resetBtn:hover::before {
+    opacity: 1;
+  }
+  
+  #resetBtn span {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media  screen and (max-width:350px) {
+    #display{
+        font-size: 3em;
+        color: white;
+    }
+    #startBtn,#stopBtn,#resetBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+    }
+    #myH1{
+        font-size: 3em;
+        color: white;
+    }
+    body{
+        background-image: url(mobile.jpg);
+    }
+  }
